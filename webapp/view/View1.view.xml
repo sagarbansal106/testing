@@ -1,0 +1,29 @@
+<mvc:View controllerName="ChartDemo.BarChart.controller.View1" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:viz="sap.viz.ui5.controls" xmlns:data="sap.viz.ui5.data" xmlns:feeds="sap.viz.ui5.controls.common.feeds">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<viz:VizFrame vizType="bar" width="100%" height="100%">
+							<viz:dataset>
+								<data:FlattenedDataset data="{/developers}">
+									<data:dimensions>
+										<data:DimensionDefinition name="Developer ID" value="{DevId}"></data:DimensionDefinition>
+									</data:dimensions>
+									<data:measures>
+										<data:MeasureDefinition name="Issues Fixed" value="{IssuesFix}"></data:MeasureDefinition>
+									</data:measures>
+								</data:FlattenedDataset>
+							</viz:dataset>
+							<viz:feeds>
+								<feeds:FeedItem type="Dimension" values="Developer ID" uid="categoryAxis"></feeds:FeedItem>
+								<feeds:FeedItem type="Measure" values="Issues Fixed" uid="valueAxis"></feeds:FeedItem>
+							</viz:feeds>
+						</viz:VizFrame>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

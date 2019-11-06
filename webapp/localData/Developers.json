@@ -1,0 +1,25 @@
+{
+	"developers":[
+		{
+			"DevId" : 970,
+			"IssuesFix" : "20"
+		},
+		{
+			"DevId" : 971,
+			"IssuesFix" : "22"
+		},
+		{
+			"DevId" : 972,
+			"IssuesFix" : "90"
+		},
+		{
+			"DevId" : 973,
+			"IssuesFix" : "40"
+		},
+		{
+			"DevId" : 974,
+			"IssuesFix" : "29"
+		}
+		
+		]
+}
